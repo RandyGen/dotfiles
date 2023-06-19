@@ -1,0 +1,71 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    // workbench
+    "workbench.startupEditor": "none",
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.tree.renderIndentGuides": "always",
+    "workbench.tree.indent": 16,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Night Owl",
+    "workbench.colorCustomizations": {
+        "editorCursor.foreground": "#f858f07f",
+        "terminalCursor.foreground": "#f858f07f"
+    },
+    // editor
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.minimap.enabled": false,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.cursorStyle": "block",
+    "editor.cursorBlinking": "expand",
+    "editor.formatOnSave": true,
+    "editor.renderLineHighlight": "all",
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true,
+    },
+    // window
+    "window.openFilesInNewWindow": "off",
+    "window.title": "${activeEditorMedium}${separator}${rootName}",
+    // files
+    "files.autoSave": "afterDelay",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    // debug
+    "debug.onTaskErrors": "debugAnyway",
+    // explorer
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    // setting for each lang
+    // vim
+    "vim.hlsearch": true,
+    // dart
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false
+    },
+    // python
+    "python.languageServer": "Pylance",
+    "python.defaultInterpreterPath": "/usr/local/bin/python3",
+    "python.linting.flake8Enabled": true,
+    "python.formatting.provider": "black",
+    "python.linting.flake8Args": [
+        "--ignore=E501, E203, E225, E226, E227, E228, E231, F401"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/randy/.pyenv/versions/allennlp-ner-ja/lib/python3.8/site-packages/"
+    ],
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "editor.fontSize": 10,
+}

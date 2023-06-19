@@ -1,0 +1,64 @@
+[
+    // Untitled ではなく、新規ファイルを作成する
+    {
+        "key": "cmd+n",
+        "command": "-workbench.action.files.newUntitledFile"
+    },
+    {
+        "key": "cmd+n",
+        "command": "explorer.newFile"
+    },
+    // 新規フォルダを作成する
+    {
+        "key": "shift+cmd+n",
+        "command": "-workbench.action.newWindow"
+    },
+    {
+        "key": "shift+cmd+n",
+        "command": "explorer.newFolder"
+    },
+    // リンク, 定義元を開く
+    {
+        "key": "shift+cmd+enter",
+        "command": "editor.action.openLink"
+    },
+    {
+        "key": "shift+cmd+enter",
+        "command": "editor.action.goToTypeDefinition"
+    },
+    {
+        "key": "shift+cmd+enter",
+        "command": "editor.action.revealDefinition"
+    },
+    // parameterHints を開いたり閉じたりする
+    {
+        "key": "cmd+space",
+        "command": "editor.action.triggerParameterHints",
+        "when": "editorHasSignatureHelpProvider && editorTextFocus"
+    },
+    {
+        "key": "cmd+space",
+        "command": "closeParameterHints",
+        "when": "editorFocus && parameterHintsVisible"
+    },
+    // 予測変換を tab で選択する
+    {
+        "key": "tab",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "shift+tab",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    // // タブ移動
+    // {
+    //     "key": "cmdshift+tab",
+    //     "command": "workbench.action.previousEditor"
+    // },
+    // {
+    //     "key": "cmd+tab",
+    //     "command": "workbench.action.nextEditor"
+    // },
+]
